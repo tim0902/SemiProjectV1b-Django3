@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>{%  block title %}Python 웹프로젝트 v1{% endblock %}</title>
     <link rel="stylesheet" href="{% static '/css/normalize.css'%}">
+    <link rel="stylesheet" href="{% static '/css/webproject.css'%}">
 
     <style>
         {% block style %} {% endblock %}
@@ -12,7 +13,7 @@
 </head>
 <body>
     <div id="wrap">
-        {% include 'layout/head.html' %}
+        {% include 'layout/header.html' %}
     <div id="main">
         {% block content %} {% endblock %}
 
